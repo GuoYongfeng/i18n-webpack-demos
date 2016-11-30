@@ -1,0 +1,29 @@
+{
+  "name": "i18n-webpack-demos",
+  "version": "1.0.0",
+  "description": "i18n webpack solution",
+  "main": "build.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack -w --colors --progress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GuoYongfeng/i18n-webpack-demos.git"
+  },
+  "keywords": [
+    "i18n",
+    "webpack"
+  ],
+  "author": "GuoYongfeng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GuoYongfeng/i18n-webpack-demos/issues"
+  },
+  "homepage": "https://github.com/GuoYongfeng/i18n-webpack-demos#readme",
+  "devDependencies": {
+    "i18n-webpack-plugin": "^0.3.0",
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.2"
+  }
+}
