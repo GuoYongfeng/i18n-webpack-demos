@@ -2,6 +2,9 @@ var path = require("path")
 var I18nPlugin = require("i18n-webpack-plugin")
 var htmlWebpackPlugin = require("html-webpack-plugin")
 
+var fs = require("fs")
+var path = require("path")
+
 var languages = {
 	"en": null,
 	"de": require("./locals/de.json")
@@ -12,7 +15,7 @@ module.exports = Object.keys(languages).map(function(language) {
 		name: language,
 		entry: "./src/index.js",
 		output: {
-			path: path.join(__dirname, "dist"),
+			path: path.join(__dirname, 'dist/' + language),
 			filename: language + ".output.js"
 		},
 		module: {

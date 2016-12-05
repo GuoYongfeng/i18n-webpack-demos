@@ -48,7 +48,7 @@
 
 	console.log("Hallo Welt");
 	console.log("Missing Text");
-	console.log("internationnal");
+	console.log("国化解决方案");
 
 /***/ }
 /******/ ]);

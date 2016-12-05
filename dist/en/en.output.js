@@ -48,7 +48,7 @@
 
 	console.log("Hello World");
 	console.log("Missing Text");
-	console.log("国际化解决方案");
+	console.log("国化解决方案");
 
 /***/ }
 /******/ ]);
