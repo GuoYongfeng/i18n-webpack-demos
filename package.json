@@ -4,7 +4,7 @@
   "description": "i18n webpack solution",
   "main": "build.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "clear": "rm -rf dist/*",
     "start": "webpack -w --colors --progress"
   },
   "repository": {

@@ -46,9 +46,17 @@
 
 	"use strict";
 
-	console.log("Hallo Welt");
+	__webpack_require__(1);
+
+	console.log("Hello World");
 	console.log("Missing Text");
-	console.log("国化解决方案");
+	console.log("validate.required");
+
+/***/ },
+/* 1 */
+/***/ function(module, exports) {
+
+	module.exports = "module.exports = \"<div>\\n  <h1>__(\\\"不能为空！\\\")</h1>\\n  <ul>\\n    <li></li>\\n    <li></li>\\n    <li></li>\\n  </ul>\\n</div>\\n\";";
 
 /***/ }
 /******/ ]);

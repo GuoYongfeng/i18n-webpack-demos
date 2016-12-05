@@ -6,8 +6,10 @@ var fs = require("fs")
 var path = require("path")
 
 var languages = {
-	"en": null,
-	"de": require("./locals/de.json")
+	"en": require("./locals/en/trans.json"),
+	"en_US": require("./locals/en_US/trans.json"),
+	"zh": require("./locals/zh/trans.json"),
+	"zh_CN": require("./locals/zh_CN/trans.json")
 };
 
 module.exports = Object.keys(languages).map(function(language) {
@@ -15,7 +17,7 @@ module.exports = Object.keys(languages).map(function(language) {
 		name: language,
 		entry: "./src/index.js",
 		output: {
-			path: path.join(__dirname, 'dist/' + language),
+			path: path.join(__dirname, 'dist/'),
 			filename: language + ".output.js"
 		},
 		module: {
