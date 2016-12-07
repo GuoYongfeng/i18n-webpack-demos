@@ -9,6 +9,11 @@ $ npm install
 $ npm start
 ```
 
+## TODO
+
+- html编译成多版本
+- js 里面异步加载的资源也经过i18n处理
+
 ## 如何进行编译
 
 ### 基础参照json文件

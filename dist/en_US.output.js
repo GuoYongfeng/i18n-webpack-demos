@@ -48,15 +48,14 @@
 
 	__webpack_require__(1);
 
-	console.log("Hello World");
-	console.log("Missing Text");
-	console.log("validate.required");
+	console.log("international");
+	console.log("solution");
 
 /***/ },
 /* 1 */
 /***/ function(module, exports) {
 
-	module.exports = "module.exports = \"<div>\\n  <h1>__(\\\"不能为空！\\\")</h1>\\n  <ul>\\n    <li></li>\\n    <li></li>\\n    <li></li>\\n  </ul>\\n</div>\\n\";";
+	module.exports = "module.exports = \"<div>\\n  <h1>__(\\\"international\\\")</h1>\\n  <ul>\\n    <li></li>\\n    <li></li>\\n    <li></li>\\n  </ul>\\n</div>\\n\";";
 
 /***/ }
 /******/ ]);
