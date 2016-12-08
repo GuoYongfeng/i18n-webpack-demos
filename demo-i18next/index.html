@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+      <script src="http://design.yyuap.com/static/jquery/jquery-1.9.1.min.js"></script>
+      <script src="./i18next-1.7.7.min.js"></script>
+  </head>
+  <body>
+    <div data-i18n="title"></div>
+    <input data-i18n="[placeholder]placeholder" type="text">
+    <p data-i18n="para"></p>
+    <button class="lang" data-lang="EN">EngLish</button>
+    <button class="lang" data-lang="CN">中文</button>
+    <script>
+        var resources = {
+            "CN":{
+                "translation":{
+                    "title":"标题",
+                    "placeholder":"输入名字",
+                    "para":"一段自我介绍"
+                }
+            },
+            "EN":{
+                "translation":{
+                    "title":"Title",
+                    "placeholder":"Enter Name",
+                    "para":"some about my story"
+                }
+            }
+        }
+        $(document).ready(function(){
+            i18n.init({
+                'lng':'EN',
+                'resStore':resources
+            },function(t){
+                $(document).i18n();
+            })
+            $('.lang').click(function(){
+                var lang = $(this).attr('data-lang');
+                i18n.init({
+                    'lng':lang
+                },function(){
+                    $(document).i18n();
+                })
+            })
+        })
+    </script>
+ </body>
+</html>
