@@ -37,12 +37,13 @@ var configs = Object.keys(languages).map(function(language) {
 		plugins: [
 			new I18nPlugin( languages[language] ),
 			new htmlWebpackPlugin({
-				filename: "index.html",
+				filename: language + ".html",
 				template: "./src/index.html"
 			})
 		]
 	};
 
+	console.log( conf )
 	return conf
 });
 

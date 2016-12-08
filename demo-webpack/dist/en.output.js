@@ -48,8 +48,8 @@
 
 	// require("html!./a.html");
 
-	console.log("international");
-	console.log("solution");
+	console.log("en");
+	console.log("en");
 
 /***/ }
 /******/ ]);

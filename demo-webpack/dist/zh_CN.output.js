@@ -48,8 +48,8 @@
 
 	// require("html!./a.html");
 
-	console.log("国际化");
-	console.log("解决方案");
+	console.log("zh_CN");
+	console.log("zh_CN");
 
 /***/ }
 /******/ ]);
